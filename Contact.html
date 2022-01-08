@@ -1,80 +1,85 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Contact_CAFE</title>
-	<link rel="stylesheet" type="text/css" href="css/contact.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact_CAFE</title>
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://www.gstatic.com/firebasejs/9.6.2/firebase.js"></script>
+    <script src="app.js"></script>
 </head>
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
- <header>
-     <nav>
-       <div class="row clearfix">
-       	    <img src="imgs/logo.png" class="logo">
+    <header>
+        <nav>
+            <div class="row clearfix">
+                <img src="imgs/logo.png" class="logo">
 
-       	 <ul class="main-nav animated slideInDown" id="check-class">
-       	 	<li><a href="index.html">HOME</a></li>
-       	 	<li><a href="Menu.html">MENU</a></li>
-       	 	<li><a href="About.html">ABOUT</a></li>
-       	 	<li><a href="Contact.html">CONTACT US</a></li>	
-       	 </ul> 
-         
-       </div>	
-     </nav>
-      <div class="main-content-header">
-        <div class="container">
-  <div style="text-align:center">
-    <h2>Contact Us</h2>
-    <br>
-    <p>Swing by for a cup of coffee, or leave us a message:</p>
-    <br>
-  </div>
-  <div class="row">
-    <div class="column">
-      <h1> WE CATER... </h1>
-      <br><p>From small intimate gatherings to big soirees, CAFE BREWERS BAY offers a great selection of vegetarian food and drinks. Call us a week in advance at <p style="font-family: body; color: #bf55ec;">01724655641 / 42</p>and we'll put together a special menu just for you.</p>
+                <ul class="main-nav animated slideInDown" id="check-class">
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="Menu.html">MENU</a></li>
+                    <li><a href="About.html">ABOUT</a></li>
+                    <li><a href="Contact.html">CONTACT US</a></li>
+                </ul>
 
-       <br> <img src="imgs/contact.jpg" style="width:100%">
-          <h1>...AND HOME-DELIVER TOO.</h1>
-          <br><p>Don't feel like stepping out but want CAFE BREWERS BAY delicious food at home? Call us at<p style="font-family: body;color: #bf55ec">
-01724655641/42</p>and we'll be there at your doorstop with your order!</p>
-<p>Email:-information@brewersbay.co.in</p>
-    </div>
-    <div class="column">
-      <form action="/action_page.php">
-        <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
-        <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-        <label for="city">Area</label>
-        <select id="city" name="city">
-          <option value="Banani">Banani</option>
-          <option value="Gulshan">Gulshan</option>
-          <option value="Dhanmondi">Dhanmondi</option>
-          <option value="Uttara">Uttara</option>
-          <option value="Mirpur">Mirpur</option>
-        </select>
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-        <input type="submit" value="Submit">
-      </form>
-    </div>
-  </div>
-</div>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <div class="container">
+                <div style="text-align:center">
+                    <h2>Contact Us</h2>
+                    <br>
+                    <p>Swing by for a cup of coffee, or leave us a message:</p>
+                    <br>
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <h1> WE CATER... </h1>
+                        <br><p>From small intimate gatherings to big soirees, CAFE BREWERS BAY offers a great selection of vegetarian food and drinks. Call us a week in advance at <p style="font-family: body; color: #bf55ec;">01724655641 / 42</p>and we'll put together a special menu just for you.</p>
+
+                        <br> <img src="imgs/contact.jpg" style="width:100%">
+                        <h1>...AND HOME-DELIVER TOO.</h1>
+                        <br><p>Don't feel like stepping out but want CAFE BREWERS BAY delicious food at home? Call us at<p style="font-family: body;color: #bf55ec">
+                            01724655641/42
+                        </p>and we'll be there at your doorstop with your order!</p>
+                        <p>Email:-information@brewersbay.co.in</p>
+                    </div>
+                    <div class="column">
+                        <form id="contactForm" action="/action_page.php">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                            <label for="city">Area</label>
+                            <select id="city" name="city">
+                                <option value="Banani">Banani</option>
+                                <option value="Gulshan">Gulshan</option>
+                                <option value="Dhanmondi">Dhanmondi</option>
+                                <option value="Uttara">Uttara</option>
+                                <option value="Mirpur">Mirpur</option>
+                            </select>
+                            <label for="subject">Subject</label>
+                            <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                            <button style="margin-right: 5px; width:25%; background-color: blue; color: white; cursor: pointer; font-size: 18ppx;" type="button" type="submit" onclick="sendMessage()">Submit</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
 
 
-<footer>
-  <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
-<a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
-<a href="https://www.instagram.com/accounts/login/?hl=en" class="fa fa-instagram"></a>
-<a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" class="fa fa-snapchat-ghost"></a>
-<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-google"></a>
-</footer>
-</header>   
- </body>
+            <footer>
+                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/accounts/login/?hl=en" class="fa fa-instagram"></a>
+                <a href="https://accounts.snapchat.com/accounts/login?continue=https%3A%2F%2Faccounts.snapchat.com%2Faccounts%2Fwelcome" class="fa fa-snapchat-ghost"></a>
+                <a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-google"></a>
+            </footer>
+    </header>
+    
+</body>
 </html>

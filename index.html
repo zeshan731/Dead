@@ -3,6 +3,7 @@
 <head>
 	<title>CAFE</title>
 	<link rel="stylesheet" type="text/css" href="css/home.css">
+	<link rel="stylesheet" type="text/css" href="css/about.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Flamenco&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -33,7 +34,97 @@
                 Sitting on its terrace watching one of the most <br>
         spectacular sceneries, you can almost forget that you are actually<br>
                   in a busy Capital.</p>
+				  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="imgs/About/about 3.jpg" style="width:100%">
+    <div class="text">Baked-bread-on-white-plate</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="imgs/About/about 4.jpg" style="width:100%">
+    <div class="text">Sliced-of-pastry</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="imgs/About/about 5.jpg" style="width:100%">
+    <div class="text">Strawberry-crepes</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="imgs/About/about 6.jpg" style="width:100%">
+    <div class="text">Cup-of-ice-creams</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="imgs/About/about 7.jpg" style="width:100%">
+    <div class="text">Raspberry-pie</div>
+  </div>
+
+  
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
      </div>
+	 
  </header>
+ <script type="text/javascript">
+   
+  function slideshow(){
+      var x = document.getElementById('check-class');
+      if(x.style.display === "none"){
+        x.style.display="block";
+      } else{
+        x.style.display="none";
+      }
+   }
+ 
+
+ 
+
+   var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+
+mybutton = document.getElementById("myBtn");
+
+
+ </script>
 </body>
 </html>

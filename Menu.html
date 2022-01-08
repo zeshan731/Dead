@@ -11,11 +11,14 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
  
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
 
 </head>
 <body>
-   <
+   
 
  <header>
      <nav>
@@ -28,7 +31,7 @@
        	 	<li><a href="About.html">ABOUT</a></li>
        	 	<li><a href="Contact.html">CONTACT US</a></li>	
        	 </ul> 
-         
+         <a href="#" class="mobile-icon"  onclick="slideshow()"> <i class="fa fa-bars"></i></a>
        </div>	
      </nav>
      <br>
@@ -37,7 +40,7 @@
 
 <div class="row" style="text-align: center; margin-bottom: 5%;">
         <div class="col">
-          <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Your Orders (<span class="total-count"></span>)</button>
+          <button style="margin-right: 5px; width:25%;" type="button" class="btn btn-primary" data-toggle="modal" data-target="#cart">Your Orders <span class="total-count"></span></button>
           <button style="margin-right: 5px; width:25%;" class="clear-cart btn btn-danger">Clear Orders </button></div>
     </div>
 
@@ -51,5 +54,1021 @@
 <button class="tablink" onclick="openPage('JUICES', this, '#bf55ec')">JUICES</button>
 
 
+<div id="COFFEES" class="tabcontent">
+  <h3>COFFEES</h3>
+  <br>
+  <hr>
+  
+<div class="row">
+  <div class="column" >
+    <h2>RISTRETTO</h2>
+    <p>A small, very strongly flavoured coffee.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 145</p>
+  <a  style="font-family: body; text-decoration: none;" href="#" data-name="RISTRETTO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>HOT CHOCOLATE</h2>
+    <p>A big nourishing, wholesome cup of whole milk — really chocolaty & frothy.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="HOT CHOCOLATE" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>ESPRESSO</h2>
+    <p>A strong black coffee — a blast of energy. Can be had with cold milk to taste.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 145</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="ESPRESSO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ LATTE</h2>
+    <p>A shot of Espresso topped with steamed milk and foam, served in a tall mug. The more milky kind!</p>
+    <p style="font-family: body; color: #bf55ec;">TK 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ LATTE" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CAFFE MACCHIATO</h2>
+    <p>An espresso coffee drink with a small amount of milk added.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 145</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFFE MACCHIATO" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ MOCHA</h2>
+    <p>A delicious combination of Espresso and chocolate syrup topped with steamed milk and chocolate powder.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ MOCHA" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CAPPUCCINO</h2>
+    <p>The Viennese style, frothy coffee with milk, topped with a dash of chocolate. Perfectly relaxing.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAPPUCCINO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>DOUBLE ESPRESSO</h2>
+    <p>Two Espressos in one.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="DOUBLE ESPRESSO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>BLACK COFFEE</h2>
+    <p>Black aromatic coffee, a perfect accompaniment or end to a good meal.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 195</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BLACK COFFEE" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ AMERICANO</h2>
+    <p>American drip coffee — Italian style! Served black with milk on the side.</p>
+     <p style="font-family: body; color: #bf55ec;">TK 195</p>
+     <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ AMERICANO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>NATIVE FILTER COFFEE</h2>
+    <p>Espresso with hot milk, aromatic and earthy.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 195</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="NATIVE FILTER COFFEE" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<img src="imgs/menu/menu1.jpg" alt="Paris" class="center">
+<br>
+<h3>COLD COFFEES</h3>
+<br>
+<p style="text-align: center;">For extra delight, add a scoop of ice cream for TK 55</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>ICED CAPPUCCINO</h2>
+    <p>Everything one enjoys in a strong Cappuccino except that this one is chilled.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 215</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="ICED CAPPUCCINO" data-price="215" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CAFÉ COLD COFFEE</h2>
+    <p>A wonderful traditional cold coffee made with our special blend of beans. Add a scoop of ice-cream for just Rs 55 extra.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 215</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ COLD COFFEE" data-price="215" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>ICED MOCHACCINO</h2>
+    <p>Shot of Espresso and chocolate syrup blended together with cold milk and topped with whipped cream.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 215</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="ICED MOCHACCINO" data-price="215" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>ICED AMERICANO</h2>
+    <p>Freshly-pulled Espresso, chilled over ice, with a dash of milk.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 195</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="ICED AMERICANO" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<h3>TEAS</h3>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>OUR SELECTION</h2>
+    <p>Green Organic, Assam Leaf, Masala Chai, Earl Grey, Kashmiri Kahwa, Darjeeling, Ginger Honey</p>
+  <p style="font-family: body; color: #bf55ec;">TK 155</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="OUR SELECTION" data-price="155" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+</div>
+
+<h3>Cafe Iced Teas</h3>
+<p style="text-align: center;">Our Iced Teas are refreshing, cooling and simply outrageous. A special blend of premium hill teas to give the perfect flavour, aroma, colour and clarity.</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>Lite Lemon / Perfect Peach</h2>
+  <p style="font-family: body; color: #bf55ec;">TK 175 each</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="Lite Lemon / Perfect Peach" data-price="175" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+</div>
+</div>
+
+
+<!------FOOOOOODS----->
+
+<div id="FOODS" class="tabcontent">
+  <h3>BREAKFAST</h3>
+   <br>
+  <hr>
+  
+<div class="row">
+  <div class="column" >
+    <h2>SUPERFOOD MIXED FRUIT BOWL</h2>
+    <p>A selection of the season’s freshest fruit with a sprinkling of your choice of seeds – sunflower, melon, flax and pumpkin.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 325</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="SUPERFOOD MIXED FRUIT BOWL" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>COTTAGE CHEESE ON TOAST</h2>
+    <p>A light breakfast option of herbed and baked cottage cheese on our bakery whole wheat toast, served with a dollop of salsa.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 325</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="COTTAGE CHEESE ON TOAST" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>COUNTRY BEANS AND MASH</h2>
+    <p>A breakfast favourite, enjoy a filling treat of English baked beans with with a portion of buttery mash and bakery fresh toast.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 325</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="COUNTRY BEANS AND MASH" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>YOGURT AND MUESLI PARFAIT</h2>
+    <p>A perfect melange of honey-sweetened yogurt with healthy fruit and cereal. A deliciously healthy sundae!</p>
+    <p style="font-family: body; color: #bf55ec;">TK 245</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="YOGURT AND MUESLI PARFAIT" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>HOT BUTTERED CINNAMON TOAST WITH HONEY</h2>
+    <p>Wholesome slices of our bakery bread spread with natural honey and cinnamon.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 145</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="HOT BUTTERED CINNAMON TOAST WITH HONEY" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+  <br>
+<h3>Low-Cal Salads</h3>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>CHOLA SALAD</h2>
+    <p>A nutritious salad of chickpeas, tomato, cucumber, onion and coriander with a fresh and spicy lemon dressing.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 345</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CHOLA SALAD" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>FATTOUSH</h2>
+    <p>A refreshing middle eastern style salad loaded with vegetables and herbs.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 345</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="FATTOUSH" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>GREEK SALAD</h2>
+    <p>A juicy, crunchy salad with fresh tomatoes, cucumber, capsicum, olives and feta cheese in an olive oil and lemon dressing.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 345</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="GREEK SALAD" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>PEAR, SPINACH AND BEETROOT SALAD</h2>
+    <p>Served with a balsamic vinegar dressing and fresh parmesan!</p>
+    <p style="font-family: body; color: #bf55ec;">TK 345</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="PEAR, SPINACH AND BEETROOT SALAD" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>MOROCCAN COUSCOUS SALAD</h2>
+    <p>A classic Moroccan salad, with couscous, pickled bell peppers, chickpeas, corn and olives in a tangy dressing.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 345</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="MOROCCAN COUSCOUS SALAD" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>SPINACH AND APPLE SALAD</h2>
+    <p>Rich in antioxidants, tossed with goat cheese and toasted almonds in a special balsamic vinegar dressing.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 345</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SPINACH AND APPLE SALAD" data-price="345" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/salad1.jpg" alt="Salad1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/salad2.jpg" alt="salad2" style="width:100%;">
+  </div>
+</div>
+  <br>
+  <h3>Cold Soups</h3>
+<br>
+<p style="text-align: center;">Try our delicious and nutritious soups! Served with wholewheat crisps.</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>CAFÉ GAZPACHO</h2>
+    <p>Our signature gazpacho, a traditional cold tomato soup originating in the southern Spanish region of Andalusia.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 245</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ GAZPACHO" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>TOMATO AND CELERY SOUP</h2>
+    <p>Vine ripened and fresh red tomato, fragrant celery...a delicious cooling soup.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="TOMATO AND CELERY SOUP" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>PESTO SOUP</h2>
+    <p>A healthy green option – made with lots of basil and cooling cucumber.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 245</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="PESTO SOUP" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>PUMPKIN SOUP</h2>
+    <p>Rustic, filling and perfect for the summer.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="PUMPKIN SOUP" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+  <h3>Small Bites & Starters</h3>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>WHOLEWHEAT PITA BREAD WITH HUMMUS</h2>
+    <p>Our bakery's fresh pita served with nutritious Hummus.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 275</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="WHOLEWHEAT PITA BREAD WITH HUMMUS" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>BRUSCHETTA</h2>
+    <p>Garden fresh tomato and basil, served on toasted garlic bread.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="BRUSCHETTA" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>HAND-TOSSED HERBY POTATO WEDGES</h2>
+    <p>Crispy on the outside, fluffy inside. Served with salsa, sour cream and a Café Barista special sauce. Perfect for two to share!</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="HAND-TOSSED HERBY POTATO WEDGES" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CHILLY CHEESE TOAST</h2>
+    <p>Melted Mozzarella cheese and green chillies on our bakery brown bread.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CHILLY CHEESE TOAST" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>BAKED NACHOS & HOT SALSA</h2>
+    <p>Café Barista baked Nachos topped with melted cheese served with red salsa.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 245</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BAKED NACHOS & HOT SALSA" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>LEBANESE PLATTER</h2>
+    <p>A three dip platter — hummus, moutabel & labneh, served with falafel and pita bread. Café Barista style!</p>
+    <p style="font-family: body; color: #bf55ec;">TK 425</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="LEBANESE PLATTER" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>SUNDRIED TOMATO & BASIL PESTO WHOLEWHEAT BREAT</h2>
+    <p>Our delicious freshly baked bread is served with herbed butter and is perfect to share!</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="SUNDRIED TOMATO & BASIL PESTO WHOLEWHEAT BREAT" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<img src="imgs/menu/menu2.jpg" alt="menu2" class="center" style="width: 50%">
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/menu3.jpg" alt="menu3" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/menu4.jpg" alt="menu4" style="width:100%;">
+  </div>
+</div>
+  <br>
+  <h3>Sandwiches</h3>
+<br>
+<p style="text-align: center;">For extra delight add a side of hand-tossed herby potato wedges. (TK 95)</p>
+  <br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>GREEK SALAD SANDWICH</h2>
+    <p>Your favourite Café Barista Greek salad now in a whole wheat pita pocket made with hummus, fresh greens, olives and feta cheese.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 395</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="GREEK SALAD SANDWICH" data-price="395" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CRUNCHY LEBANESE SANDWICH</h2>
+    <p>A scrumptious sandwich filled with crunchy peppers, lettuce and hummus, on toasted whole wheat bread.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 325</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CRUNCHY LEBANESE SANDWICH" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CAFÉ TOASTED SANDWICH</h2>
+    <p>A delicious cheese, tomato, lettuce and cucumber sandwich. Toasted just now.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 325</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ TOASTED SANDWICH" data-price="325" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>DOUBLE CHEESE CLUB SANDWICH</h2>
+    <p>Wholesome cheesy sandwich with crunchy green peppers, fresh tomatoes & onions.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 395</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="DOUBLE CHEESE CLUB SANDWICH" data-price="395" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/san1.jpg" alt="san1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/san2.jpg" alt="san2" style="width:100%;">
+  </div>
+</div>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/san3.jpg" alt="san3" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/san4.jpg" alt="san4" style="width:100%;">
+  </div>
+</div>
+ <br>
+  <h3>Mains</h3>
+<br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>FRUITS WRAP WITH HUMMUS</h2>
+    <p>A Lebanese all-time favourite. Nutritious and delicious. Café style!</p>
+  <p style="font-family: body; color: #bf55ec;">TK 425</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="FRUITS WRAP WITH HUMMUS" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>QUICHE</h2>
+    <p>Delicious Quiche filled with your choice of: • Spinach & cheese • Mushroom & cheese. Served with a helping of nutritious sprout salad.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 395</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="QUICHE" data-price="395" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>HOT JACKET POTATOES</h2>
+    <p>A favourite with everyone, try our just-out-of-the-oven potato, accompanied with blanched spinach and a yogurt-dill dip, with your choice of topping: • Hot butter, salt and pepper • Cheddar and Mozzarella cheese.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 425</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="HOT JACKET POTATOES" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>TUSCAN QUICHE</h2>
+    <p>A delicious offering with fresh and sun-dried tomatoes, caramelised onions, basil and Gouda cheese – simply superb! Served` with a helping of nutritious sprout salad.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 425</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="TUSCAN QUICHE" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+  
+  <div class="row">
+  <div class="column" >
+    <h2>BEAN & SALSA QUESADILLA</h2>
+    <p>Quesadillas loaded with red beans, salsa, lettuce and oozing cheddar cheese. Thank You Mexico!</p>
+   <p style="font-family: body; color: #bf55ec;">TK 425</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BEAN & SALSA QUESADILLA" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>PITA POCKET</h2>
+    <p>Pita bread filled with crunchy lettuce, tomatoes, nutritious falafals made with cottage cheese & bulghur wheat, all in a traditional zatziki dressing.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 425</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="PITA POCKET" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/main1.jpg" alt="main1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/main2.jpg" alt="main2" style="width:100%;">
+  </div>
+</div>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/main3.jpg" alt="main3" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/main4.jpg" alt="main4" style="width:100%;">
+  </div>
+</div>
+ <br>
+
+ <h3>Pizzas & Pastas</h3>
+<br>
+<hr>
+  <br>
+<div class="row">
+  <div class="column" >
+    <h2>CAFÉ PIZZA</h2>
+    <p>The delicious Café recipe has a special tomato sauce with garden fresh herbs. Loaded with melt-in-your-mouth cheese. Fantastico!</p>
+  <p style="font-family: body; color: #bf55ec;">TK 425</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CAFÉ PIZZA" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>SPAGHETTI AGLIO OLIO</h2>
+    <p>A winning dish with simple though distinct flavours! Made with chilli flakes, fresh basil and parmesan.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 425</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SPAGHETTI AGLIO OLIO" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>GOAT CHEESE PIZZA</h2>
+    <p>Famous in France, this a delicious pizza with goat cheese and farm fresh spinach.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 425</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="GOAT CHEESE PIZZA" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>LAZY LUNCH PASTA</h2>
+    <p>A superb dish of farm-fresh spinach, mushrooms, tomatoes and macaroni, topped with an amazing sauce & cheese. Served with warm garlic bread.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 495</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="LAZY LUNCH PASTA" data-price="495" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+  
+  <div class="row">
+  <div class="column" >
+    <h2>TUSCANY PIZZA</h2>
+    <p>For those who love their Italian flavours, this is an excellent choice with basil pesto, balsamic sundried tomatoes and fresh parmesan!</p>
+   <p style="font-family: body; color: #bf55ec;">TK 425</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="TUSCANY PIZZA" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>PENNE ALL'ARRABBIATA</h2>
+    <p>Your choice of penne or spaghetti in a rich arrabbiata sauce, with tomatoes, garlic and crushed red chillies, cooked in olive oil. Accompanied with warm garlic bread and a helping of nutritious sprout salad.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 425</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="PENNE ALL'ARRABBIATA" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>GARDEN PESTO</h2>
+    <p>Fusilli pasta in a fresh basil and coriander pesto, flavoured with olive oil & parmesan. Served with freshly baked warm bread and salad. Simply superb!</p>
+   <p style="font-family: body; color: #bf55ec;">TK 425</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="GARDEN PESTO" data-price="425" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>LASAGNA VERDURA</h2>
+    <p>Lasagna with fresh spinach and mushrooms, in a traditional sauce, subtly flavoured with oregano, and topped with cheese. Accompanied with fresh warm garlic bread.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 495</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="LASAGNA VERDURA" data-price="495" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/piz1.jpg" alt="piz1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/piz2.jpg" alt="piz2" style="width:100%;">
+  </div>
+</div>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/piz3.jpg" alt="piz3" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/piz4.jpg" alt="piz4" style="width:100%;">
+  </div>
+</div>
+</div>
+<!------- CAKES---->
+
+<div id="CAKES" class="tabcontent">
+  <h3>CAKES</h3>
+   <br>
+   <p style="text-align: center;">We recommend ... add a scoop of ice-cream to compliment some of the cakes (TK 55)</p>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>GOOEY CHOCOLATE CAKE</h2>
+    <p>A sumptuous, melt-in-the-mouth cake. Really gooey!</p>
+  <p style="font-family: body; color: #bf55ec;">TK 275</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="GOOEY CHOCOLATE CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CARROT AND WALNUT CAKE</h2>
+    <p>A nourishing cake made with jaggery and farm fresh carrots, full of goodness!</p>
+    <p style="font-family: body; color: #bf55ec;">TK 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARROT AND WALNUT CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>SPICED CARROT CAKE WITH MAPLE CREAM CHEESE FROSTING</h2>
+    <p>Our twist on a classic cake, made with jaggery and farm fresh carrots. Bursting with flavour!</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="SPICED CARROT CAKE WITH MAPLE CREAM CHEESE FROSTING" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>DATE CAKE WITH TOFFEE SAUCE</h2>
+    <p>A flavourful cake to comfort the heart & soul, served with a warm sauce.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="DATE CAKE WITH TOFFEE SAUCE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>LEMON CAKE WITH LEMON SAUCE</h2>
+    <p>A zingy upbeat cake with a great fresh lemon taste.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 275</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="LEMON CAKE WITH LEMON SAUCE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>APPLE CINNAMON CAKE</h2>
+    <p>Our original yummy Apple cake.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 275</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="APPLE CINNAMON CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>BANANA WALNUT CAKE</h2>
+    <p>A deliciously wholesome fruit and nut cake.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="BANANA WALNUT CAKE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>LEMON CHEESE CAKE</h2>
+    <p>An amazing lo-cal lemon cheese cake. Start spreading the news...</p>
+    <p style="font-family: body; color: #bf55ec;">TK 351</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="LEMON CHEESE CAKE" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+<div class="column" >
+    <h2>YOGURT AND MUESLI PARFAIT</h2>
+    <p>An all time favourite! Don’t miss it, it's also lo-cal.</p>
+    <p style="font-family: body; color: #bf55ec;">RS 351</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="YOGURT AND MUESLI PARFAIT" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<br>
+<div class="row">
+  <div class="column" style="background-color:transparent; width:33.3%; ">
+    <img src="imgs/menu/cak1.jpg" alt="cak1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:33.3%; ">
+    <img src="imgs/menu/cak2.jpg" alt="cak2" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:33.3%; ">
+    <img src="imgs/menu/cak3.jpg" alt="cak3" style="width:100%;">
+  </div>
+</div>
+
+<div class="row">
+  
+  <div class="column" style="background-color:transparent; width:33.3%; ">
+    <img src="imgs/menu/cak4.jpg" alt="cak4" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:33.3%; ">
+    <img src="imgs/menu/cak5.jpg" alt="cak5" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:33.3%; ">
+    <img src="imgs/menu/cak6.jpg" alt="cak6" style="width:100%;">
+  </div>
+</div>
+
+<br>
+
+ <h3>Desserts</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>BANOFFEE PIE</h2>
+    <p>A delicious cream, caramel and banana dessert. Too good to resist!</p>
+  <p style="font-family: body; color: #bf55ec;">TK 351</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="BANOFFEE PIE" data-price="351" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>CARAMELIZED BANANAS - Gluten-free!</h2>A 
+    <p>Healthy and packed with goodness, baked bananas with brown sugar and crunchy nuts! Perfect with a cup of green tea!</p>
+    <p style="font-family: body; color: #bf55ec;">TK 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="CARAMELIZED BANANAS" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>THE ULTIMATE BROWNIE</h2>
+    <p>Chocolatey and sinfully delicious.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="THE ULTIMATE BROWNIE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>AFFOGATO</h2>
+    <p>A scoop of ice-cream topped with a strong shot of espresso. Simply delicious.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 225</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="AFFOGATO" data-price="225" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/d1.jpg" alt="d1" style="width:100%;">
+  </div>
+  <div class="column" style="background-color:transparent; width:50%; ">
+    <img src="imgs/menu/d2.jpg" alt="d2" style="width:100%;">
+  </div>
+</div>
+</div>
+
+<!------FRESH JUICES----->
+<div id="JUICES" class="tabcontent">
+  <h3>Fresh Juices (seasonal)</h3>
+   <br>
+   <p style="text-align: center;">Café Barista users the freshest of fruits and vegetables to give you real taste and energy!</p>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>SWEET LIME</h2>
+    <p>A refreshing and cool fruit, it builds vitality and resistance against disease, rich in Vitamin C.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 210</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="SWEET LIME" data-price="210" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>PINEAPPLE</h2>A 
+    <p>Is a good kidney and body cleanser. Contains Vitamins A, B2, C.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 210</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="PINEAPPLE" data-price="210" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>WATERMELON</h2>
+    <p>A high-lycopene fruit rich in Vitamin B6 and keeps the body hydrated and energetic.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="WATERMELON" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>COCONUT WATER</h2>
+    <p>Fresh, cooling and energizing. Full of Vitamins. A, B & C.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 145</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="COCONUT WATER" data-price="145" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>CARROT</h2>
+    <p>Rich in Vitamin A, this is great for the eyes and cleanses the body.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 245</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="CARROT" data-price="245" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>POMEGRANATE</h2>
+    <p>Pomegranate is good for digestion and increasing blood circulation.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 315</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="POMEGRANATE" data-price="315" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>MANGO JUICE</h2>
+    <p>Rich in antioxidant vitamins A, C & E and boosts the immune system.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 275</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="MANGO JUICE" data-price="275" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+
+ <h3> Fresh Fruit Specials</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>DAILY DETOX</h2>
+    <p>Carrot, celery, beetroot, apple & ginger. A refreshing and energising blend of all the good stuff, packed with vitamins.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 295</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="DAILY DETOX" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>SUNSHINE GLOW</h2>A 
+    <p>Pineapple & Pomegranate - A sure cure for a drained-out-feeling, it revitalises the body. Rich in beta carotene, Vitamin C & enzymes.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SUNSHINE GLOW" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>GREEN BOUNTY</h2>
+    <p>Apple, pear spinach and mint. A glass full of goodness.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 295</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="GREEN BOUNTY" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>VEGI LUCY</h2>
+    <p>Carrot, Tomato, Beetroot, Ginger & Mint - A great de-toxifier and anti-wrinkle agent, good for the immune system. Rich in Vitamin A, potassium and magnesium.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="VEGI LUCY" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>FOUNTAIN OF YOUTH</h2>
+    <p>Pineapple & Coconut - A natural detox. It contains Vitamins A & C, potassium, magnesium, calcium phosphorus and B-Complex.</p>
+  <p style="font-family: body; color: #bf55ec;">TK 295</p>
+  <a style="font-family: body; text-decoration: none;" href="#" data-name="FOUNTAIN OF YOUTH" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>SWEET BLISS</h2>
+    <p>Apple & Sweet Lime - A great appetizer, it helps strengthen the body’s immune system and builds body resistance. Rich in Vitamins C & B, iron, potassium, calcium and phosphorus.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="SWEET BLISS" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" >
+    <h2>TROPICAL DELIGHT</h2>
+    <p>Papaya, ESPRESSO, Apple & Pomegranate - A combination of goodness that adds to the body’s defence system. A strong anti-oxidant, it is also anti-ageing. Rich in Vitamins C & B, iron, potassium, calcium and phosphorus.</p>
+   <p style="font-family: body; color: #bf55ec;">TK 295</p>
+   <a style="font-family: body; text-decoration: none;" href="#" data-name="TROPICAL DELIGHT" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<img src="imgs/menu/j1.jpg" alt="j1" class="center">
+<br>
+<h3> Dreamy Creamy Milk Shakes</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>Chocolate, Banana, Mango (seasonal)</h2>
+      <p style="font-family: body; color: #bf55ec;">TK 297 each</p>
+      <a style="font-family: body; text-decoration: none;" href="#" data-name="Chocolate, Banana, Mango (seasonal)" data-price="297" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+
+  <div class="column" >
+    <h2>DREAMY CHOCOLATE COOKIE SHAKE</h2>
+    <p>A creamy and thick milk shake with delicious chocolate cookies all blended in. Add a scoop of vanilla ice-cream for just Rs 55.</p>
+    <p style="font-family: body; color: #bf55ec;">TK 295</p>
+    <a style="font-family: body; text-decoration: none;" href="#" data-name="DREAMY CHOCOLATE COOKIE SHAKE" data-price="295" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+<br>
+<h3> Lassi</h3>
+   <br>
+  <hr>
+<div class="row">
+  <div class="column" >
+    <h2>Classic, Banana, Mango (seasonal)</h2>
+      <p style="font-family: body; color: #bf55ec;">TK 195 each</p>
+      <a style="font-family: body; text-decoration: none;" href="#" data-name="Classic, Banana, Mango" data-price="195" class="add-to-cart btn btn-primary" onclick="myFunction()">Add to Order</a>
+  </div>
+</div>
+</div>
+</div>
+
+
+
+
+
+</header>   
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" style="color: black; font-size: 200%;">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table style="color: black; font-family: body; font-style: bold;" class="show-cart table">
+          
+        </table>
+        <div style="color: black; font-family: body; font-style: bold;">Total price: TK <span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button href="Checkout.html" type="button" class="btn btn-primary"> Checkout </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script type="text/javascript">
+   
+   function slideshow(){
+      var x = document.getElementById('check-class');
+      if(x.style.display === "none"){
+        x.style.display="block";
+      } else{
+        x.style.display="none";
+      }
+   }
+
+   function openPage(pageName, elmnt, color) {
+ 
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+ 
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+ 
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+var elements = document.getElementsByClassName("column");
+
+// Declare a loop variable
+var i;
+
+// List View
+function listView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "100%";
+  }
+}
+
+//Grid View
+function gridView() {
+  for (i = 0; i < elements.length; i++) {
+    elements[i].style.width = "50%";
+  }
+}
+ </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="css/script.js"></script>
+  <script>
+function myFunction() {
+  alert("Item added in your order");
+}
+</script>
  </body>
 </html>
