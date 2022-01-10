@@ -1,46 +1,39 @@
+const form = document.getElementById('comments');
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    db.collection('comments').add({
+       name: form.name.value,
+	   email: form.email.value,
+       comment: form.comment.value
+    });
+    form.name.value = '';
+    form.email.value = '';
+    form.comment.value = '';
+    alert('Your review has been shared.');
+});
 
-    // Your web app's Firebase configuration
-    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-    const firebaseConfig = {
-        apiKey: "AIzaSyDBsLTdUSlJTA-LJrWzsr23g7Nlm79ZGi0",
-    authDomain: "cafenew-ea654.firebaseapp.com",
-    projectId: "cafenew-ea654",
-    storageBucket: "cafenew-ea654.appspot.com",
-    messagingSenderId: "324327088430",
-    appId: "1:324327088430:web:40c066f726338817235abf",
-    measurementId: "G-VE3FQ3SM9J"
-            };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
-
-
-    var database = firebase.database();
-
-    function sendMessage() {
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
-    var city = document.getElementById("city").value;
-    var subject = document.getElementById("subject").value;
-
-    var newMessagekey = database.ref().child('comments').push().key;
-    database.ref('comments/' + newMessagekey + '/First Name').set(fname);
-    database.ref('comments/' + newMessagekey + '/Last Name').set(lname);
-    database.ref('comments/' + newMessagekey + '/Area').set(city);
-    database.ref('comments/' + newMessagekey + '/Message').set(subject);
-            }
-
-    document.getElementById('contactForm').addEventListener('submit', submitForm)
-
-    function submitForm(e) {
-        e.preventdefault();
-            }
-
-    document.querySelector('.alert').getElementsByClassName.display = 'block';
-
-    function hideAlert() {
-        document.querySelector('.alert').getElementsByClassName.display = 'none';
-            }
-
-    setTimeout(hideAlert, 3000);
+const div = document.querySelector('.cont');
+renderlist = (doc) => {
+    var main_div = document.createElement('div');
+    var card_body = document.createElement('div');
+    var name = document.createElement('h5');
+    var comment = document.createElement('p');
+    main_div.setAttribute('class','card mt-3');
+    card_body.setAttribute('class','card-body');
+    name.setAttribute('class','card-title');
+    comment.setAttribute('class','card-text');
+    name.textContent = doc.data().name;
+    comment.textContent = doc.data().comment;
+    card_body.appendChild(name);
+    card_body.appendChild(comment);
+    main_div.appendChild(card_body);
+    div.appendChild(main_div);
+}
+db.collection('comments').onSnapshot(snap => {
+    const changes = snap.docChanges();
+    changes.forEach(change => {
+        if (change.type == 'added') {
+          renderlist(change.doc);
+        }
+    });
+});
